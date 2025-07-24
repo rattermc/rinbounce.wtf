@@ -34,7 +34,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-lg">
-                The most advanced and undetectable PvP client for Minecraft 1.8.9 
+                The most experience Cheat client for Minecraft 1.8.9
                 with unique features and stylish visuals.
               </p>
             </div>
@@ -69,18 +69,11 @@ const HeroSection = () => {
                   allowFullScreen
                 ></iframe>
                 
-                {/* Floating UI elements */}
-                <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm rounded-lg p-3 border border-border">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-xs font-medium">Live Demo</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </section>
   );
 };
