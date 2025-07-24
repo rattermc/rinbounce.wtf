@@ -23,7 +23,7 @@ const VideoShowcase = () => {
             <div className="card-gaming overflow-hidden">
               <div className="relative aspect-video">
                 <iframe
-                  src="https://www.youtube.com/embed/qHpD_O2DJG4"
+                  src="https://www.youtube.com/embed/WjGC_pkmSDc"
                   title="RinBounce Featured Video"
                   className="w-full h-full rounded-2xl"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -33,7 +33,7 @@ const VideoShowcase = () => {
                 {/* External link icon */}
                 <div className="absolute top-4 right-4">
                   <a 
-                    href="https://www.youtube.com/watch?v=qHpD_O2DJG4" 
+                    href="https://www.youtube.com/watch?v=WjGC_pkmSDc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-background/80 backdrop-blur-sm rounded-lg p-2 border border-border hover:bg-background/90 transition-colors"

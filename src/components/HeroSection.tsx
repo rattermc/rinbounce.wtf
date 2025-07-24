@@ -62,7 +62,7 @@ const HeroSection = () => {
             <div className="card-gaming overflow-hidden">
               <div className="relative aspect-video">
                 <iframe
-                  src="https://www.youtube.com/embed/qHpD_O2DJG4?autoplay=1&mute=1&loop=1&playlist=qHpD_O2DJG4&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+                  src="https://www.youtube.com/embed/WjGC_pkmSDc?autoplay=1&mute=1&loop=1&playlist=WjGC_pkmSDc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
                   title="RinBounce Demo Video"
                   className="w-full h-full rounded-2xl"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
