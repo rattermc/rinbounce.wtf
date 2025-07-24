@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RinBounce Design System - Gaming cheat client aesthetic */
+
+@layer base {
+  :root {
+    /* Dark gaming theme - primary colors */
+    --background: 249 15% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 249 15% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 249 15% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Coral/Pink primary theme */
+    --primary: 14 86% 75%;
+    --primary-foreground: 249 15% 8%;
+
+    /* Secondary purple theme */
+    --secondary: 270 15% 25%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 249 15% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    /* Gaming accent colors */
+    --accent: 270 15% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 15% 20%;
+    --input: 270 15% 20%;
+    --ring: 14 86% 75%;
+
+    --radius: 1rem;
+
+    /* Custom gaming gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(14 86% 75%), hsl(340 82% 70%));
+    --gradient-background: linear-gradient(180deg, hsl(249 15% 8%), hsl(270 15% 12%));
+    --gradient-card: linear-gradient(135deg, hsl(249 15% 12%), hsl(270 15% 15%));
+    
+    /* Gaming shadows and glows */
+    --shadow-glow: 0 0 40px hsl(14 86% 75% / 0.3);
+    --shadow-card: 0 20px 40px hsl(0 0% 0% / 0.3);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar colors for consistency */
+    --sidebar-background: 249 15% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 14 86% 75%;
+    --sidebar-primary-foreground: 249 15% 8%;
+    --sidebar-accent: 270 15% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 270 15% 20%;
+    --sidebar-ring: 14 86% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Gaming button variants */
+  .btn-gaming {
+    @apply bg-primary text-primary-foreground font-semibold px-8 py-3 rounded-2xl;
+    @apply hover:scale-105 transition-all duration-300;
+    @apply shadow-lg hover:shadow-[var(--shadow-glow)];
+    background: var(--gradient-primary);
+  }
+  
+  .btn-outline-gaming {
+    @apply border-2 border-primary text-primary font-semibold px-8 py-3 rounded-2xl;
+    @apply hover:bg-primary hover:text-primary-foreground;
+    @apply transition-all duration-300;
+  }
+
+  /* Gaming card styles */
+  .card-gaming {
+    @apply bg-card border border-border rounded-3xl p-6;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Decorative elements */
+  .decorative-circle {
+    @apply absolute rounded-full opacity-60;
+    background: var(--gradient-primary);
+    filter: blur(1px);
+  }
+
+  /* Enhanced video iframe styling */
+  .video-container {
+    @apply relative overflow-hidden rounded-2xl;
+    box-shadow: var(--shadow-card);
+  }
+  
+  .video-container iframe {
+    @apply w-full h-full border-0 rounded-2xl;
+  }
+  
+  /* Logo hover effect */
+  .logo-hover {
+    @apply transition-all duration-300 hover:scale-110;
+    filter: drop-shadow(0 0 10px hsl(var(--primary) / 0.5));
+  }
+  
+  /* Navigation enhancements */
+  .nav-glass {
+    background: hsl(var(--background) / 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid hsl(var(--border) / 0.5);
+  }
+}
