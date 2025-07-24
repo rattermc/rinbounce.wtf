@@ -22,7 +22,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/ffef0b26-bc31-4828-8d97-9c33cb1229fd.png" 
+              src="/image/ffef0b26-bc31-4828-8d97-9c33cb1229fd.png" 
               alt="RinBounce Logo" 
               className="w-10 h-10 rounded-lg"
             />
